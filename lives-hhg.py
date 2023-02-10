@@ -62,7 +62,7 @@ time.sleep(1.2)
 
 print("")
 
-print("\033[1;32m lives-hhg")
+print("\033[1;32m lives-hhg.py")
 
 print("")
 
@@ -82,9 +82,9 @@ def usage():
 
     print("")
 
-    print("\033[1;33m  python2 Live-Generator.py -b \033[1;31m >>>\033[1;33m Opciones de uso")
+    print("\033[1;33m  python2 lives-hhg.py -b \033[1;31m >>>\033[1;33m Opciones de uso")
 
-    print("\033[1;33m  python2 Live-Generator.py -h \033[1;31m >>>\033[1;33m Mensaje de ayuda")
+    print("\033[1;33m  python2 lives-hhg.py -h \033[1;31m >>>\033[1;33m Mensaje de ayuda")
 
     print("")
 
@@ -112,7 +112,7 @@ def usage():
 
     print("")
 
-    print("\033[1;36mpython2 Live-Generator.py -b 123456xxxxxxxxxx -u 30 -d -c ")
+    print("\033[1;36mpython2 lives-hhg.py -b 123456xxxxxxxxxx -u 30 -d -c ")
 
     print("")
 
@@ -228,7 +228,7 @@ def ccgen(bin_format):
 
                 print("El formato del bin es: xxxxxxxxxxxxxxxx de 16 digitos\n")
 
-                print("Ayuda: python2 Live-Generator.py -h \n")
+                print("Ayuda: python2 lives-hhg.py -h \n")
 
                 sys.exit()
 
@@ -258,7 +258,7 @@ def ccgen(bin_format):
 
         print("SOLUCION: El formato del bin es: xxxxxxxxxxxxxxxx de 16 digitos\n")
 
-        print("AYUDA: python2 Live-Generator.py -h\n")
+        print("AYUDA: python2 lives-hhg.py h\n")
 
         sys.exit()
 
