@@ -134,7 +134,7 @@ def parseOptions(argv):
 
     try:
 
-        opts, args = getopt.getopt(argv, "h:b:u:gcd",["help", "bin", "guardar", "cantidad", "ccv", "date"])
+        opts, args = getopt.getopt(argv, "h:b:u:gdc",["help", "bin", "guardar", "cantidad", "date", "cvv"])
 
         for opt, arg in opts:
 
@@ -280,23 +280,7 @@ def save(generated):
 
     f.close
 
-#Random ccv gen
 
-def ccvgen():
-
-    ccv = ""
-
-    num = randint(10,999)
-
-    if num < 100:
-
-        ccv = "0" + str(num)
-
-    else:
-
-        ccv = str(num)
-
-    return(ccv)
 
 #Random exp date
 
@@ -316,6 +300,25 @@ def dategen():
 
     return date
 
+#Random ccv gen
+
+def ccvgen():
+
+    ccv = ""
+
+    num = randint(10,999)
+
+    if num < 100:
+
+        ccv = "0" + str(num)
+
+    else:
+
+        ccv = str(num)
+
+    return(ccv)
+
+
 #The main function
 
 def main(argv):
@@ -324,7 +327,7 @@ def main(argv):
 
     #get arg data
 
-    (bin_format, saveopt, limit, ccv, date) = parseOptions(argv)
+    (bin_format, saveopt, limit, date, cvv) = parseOptions(argv)
 
     if bin_format is not "":
 
@@ -360,9 +363,9 @@ def main(argv):
 
         else:
 
-            print("\n Todas las tarjetas fueron validadas con exito ")
+            print("\n Todas las tarjetas fueron validadas con exito ✔︎")
 
-            print("\n Pueden ser usadas satisfactoriamente")
+            print("\n Pueden ser usadas satisfactoriamente ✔︎")
 
         if saveopt:
 
